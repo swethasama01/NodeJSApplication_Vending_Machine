@@ -1,7 +1,7 @@
 function DownloadJSON() {
     var products = [{
         name: "Fizz",
-        cost: 1.5
+        cost: 1
     }, {
         name: "Cola",
         cost: 1
