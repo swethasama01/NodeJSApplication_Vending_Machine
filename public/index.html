@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <meta http-equiv="X-UA-Compatible" />
+    <title>Vending Machine</title>
+</head>
+<body>
+    <h1>Vending Machine</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Description</th>
+                <th>Product Cost</th>
+                <th>Qty Available</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fizz</td>
+                <td>An effervescent fruity experience with hints of grape and coriander.</td>
+                <td>$1</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Cola</td>
+                <td>A basic no nonsense cola that is the perfect pick me up for any occasion.</td>
+                <td>$1</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Mega Pop</td>
+                <td>Not for the faint of heart.  So flavorful and so invigorating, it should probably be illegal.</td>
+                <td>$1</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <form>
+        <span>Choose a Product Name:</span>
+        <select id="product_name" name="product_name">
+            <option value="Fizz">Fizz</option>
+            <option value="Cola">Cola</option>
+            <option value="Mega Pop">Mega Pop</option>
+        </select>
+        <span>Enter Quantity</span>
+        <input type="number" id="qty" name="qty" required />
+        <button value="Buy" id="buy" onclick="DownloadJSON()">Buy</button>
+        <button value="Cancel" id="cancel">Cancel</button>
+        <div id="container"></div>
+    </form>
+    <script src="vending.js"></script>
+</body>
+</html>
